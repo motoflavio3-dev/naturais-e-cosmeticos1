@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#28551c">
+  <meta name="description" content="Produtos naturais e cosméticos para cuidar de você com amor e consciência.">
+  <title>Naturais e Cosméticos — Beleza Natural</title>
+  <style>
+    :root{--green-950:#173b11;--green-900:#214b17;--green-800:#2d5c20;--green-700:#477f2f;--green-100:#eaf1e3;--cream:#faf7f0;--ink:#263126;--muted:#6d756a;--white:#fff;--peach:#efc0b8;--shadow:0 8px 22px rgba(34,55,26,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}button,input{font:inherit}button{cursor:pointer}.site-header{position:sticky;top:0;z-index:10;background:linear-gradient(100deg,var(--green-950),#3b7027);color:white;box-shadow:0 3px 14px #173b1120}.header-inner{max-width:1180px;margin:auto;padding:12px 22px;display:grid;grid-template-columns:1fr minmax(220px,380px) auto;align-items:center;gap:24px}.brand{font-weight:800;font-size:1.15rem;color:white;text-decoration:none;white-space:nowrap}.brand span{margin-right:8px}.search-wrap{position:relative}.search-wrap input{width:100%;border:0;border-radius:999px;padding:11px 16px 11px 42px;background:#fff;color:var(--ink);outline:2px solid transparent}.search-wrap input:focus{outline-color:#b9da98}.search-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);pointer-events:none}.cart-top{border:0;border-radius:999px;background:#e3b770;color:var(--green-950);font-weight:750;padding:10px 16px;white-space:nowrap}.count{display:inline-grid;place-items:center;min-width:23px;height:23px;margin-left:6px;border-radius:50%;background:var(--green-950);color:#fff;font-size:.8rem}.hero{text-align:center;color:white;background:linear-gradient(110deg,#527a3e,#86a66f);padding:52px 20px 50px}.hero h1{margin:0 0 10px;font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15}.hero p{max-width:580px;margin:0 auto;color:#f4f8ef;font-size:1.04rem}.hero-note{margin-top:22px;display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;background:#ffffff22;font-size:.88rem}.main{max-width:1180px;margin:0 auto;padding:25px 22px 42px}.filters{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;margin:0 auto 26px}.filter-btn{border:1.5px solid var(--green-700);border-radius:999px;background:transparent;padding:8px 17px;color:var(--green-800);font-size:.9rem;transition:.18s}.filter-btn:hover,.filter-btn.active{background:var(--green-700);color:#fff}.results-note{color:var(--muted);font-size:.88rem;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.product-card{position:relative;background:#fff;border-radius:15px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;transition:transform .2s,box-shadow .2s}.product-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px #22371a1c}.product-art{position:relative;width:100%;height:170px;display:grid;place-items:center;padding:0;border:0;color:inherit;background:linear-gradient(135deg,#9abd78,#efc7c1);overflow:hidden}.zoom-trigger{cursor:zoom-in}.zoom-trigger:focus-visible{outline:3px solid #d7eebd;outline-offset:-4px}.zoom-hint{position:absolute;right:9px;bottom:9px;z-index:2;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#ffffffdf;font-size:.9rem;box-shadow:0 2px 8px #0002}.product-art::before,.product-art::after{content:"";position:absolute;border-radius:50%;background:#ffffff27}.product-art::before{width:150px;height:150px;left:-38px;bottom:-80px}.product-art::after{width:120px;height:120px;right:-35px;top:-58px}.product-emoji{font-size:4.3rem;filter:drop-shadow(0 7px 5px #533a2426);z-index:1}.product-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}.share-btn{position:absolute;right:10px;top:10px;z-index:2;width:36px;height:36px;border:0;border-radius:50%;background:#20c96a;color:#fff;box-shadow:0 2px 8px #0002;font-size:1rem}.product-body{padding:13px 14px 14px;display:flex;flex-direction:column;flex:1}.category-label{color:var(--green-700);font-size:.69rem;letter-spacing:.09em;font-weight:800;text-transform:uppercase}.product-body h2{font-size:1rem;line-height:1.3;margin:6px 0 5px;color:#292d28}.product-desc{font-size:.84rem;color:var(--muted);margin:0 0 12px;min-height:2.5em}.price{font-size:1.18rem;font-weight:850;color:var(--green-900);margin-top:auto;margin-bottom:10px}.add-btn{border:0;border-radius:8px;background:var(--green-700);color:#fff;padding:10px 12px;font-weight:750;font-size:.9rem;transition:background .15s}.add-btn:hover{background:var(--green-900)}.empty-results{text-align:center;grid-column:1/-1;padding:50px 20px;color:var(--muted)}.empty-results strong{display:block;font-size:1.15rem;color:var(--ink);margin-bottom:5px}.site-footer{background:var(--green-900);color:white;text-align:center;padding:30px 18px}.footer-brand{font-weight:800;margin:0 0 3px}.site-footer p{margin:3px 0;color:#ecf3e8}.admin-btn{margin:17px 0 12px;border:1px solid #ffffff66;border-radius:999px;background:#ffffff12;color:#fff;padding:8px 14px}.copyright{font-size:.82rem;color:#d6e2d0!important}.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:9;width:58px;height:58px;border:0;border-radius:50%;background:#20c96a;color:white;font-size:1.7rem;box-shadow:0 5px 18px #19a95966;display:grid;place-items:center;text-decoration:none}.shipping-tip{position:fixed;right:22px;bottom:91px;z-index:8;background:#fff;border-radius:9px;padding:9px 12px;box-shadow:var(--shadow);font-size:.8rem;color:var(--green-900)}
+    .overlay{position:fixed;inset:0;background:#12200e77;z-index:19;opacity:0;visibility:hidden;transition:.2s}.overlay.open{opacity:1;visibility:visible}.cart-drawer{position:fixed;z-index:20;right:0;top:0;height:100dvh;width:min(410px,100%);background:#fff;box-shadow:-10px 0 28px #0002;transform:translateX(105%);transition:transform .25s;display:flex;flex-direction:column}.cart-drawer.open{transform:translateX(0)}.cart-head{padding:18px 20px;border-bottom:1px solid #e8eae5;display:flex;align-items:center;justify-content:space-between}.cart-head h2{margin:0;color:var(--green-900);font-size:1.2rem}.close-cart{background:none;border:0;font-size:1.7rem;color:#576052;line-height:1}.cart-items{overflow-y:auto;padding:10px 20px;flex:1}.cart-empty{text-align:center;padding:56px 15px;color:var(--muted)}.cart-empty .bag{font-size:2.7rem}.cart-empty p{margin:7px 0}.cart-line{display:grid;grid-template-columns:48px 1fr auto;gap:11px;align-items:center;padding:13px 0;border-bottom:1px solid #edf0e9}.cart-line-emoji{width:48px;height:48px;display:grid;place-items:center;overflow:hidden;border-radius:8px;background:var(--green-100);font-size:1.8rem}.cart-line-emoji img{width:100%;height:100%;object-fit:cover}.cart-line h3{font-size:.9rem;line-height:1.25;margin:0 0 3px}.cart-line small{color:var(--muted)}.quantity{display:flex;align-items:center;gap:9px;margin-top:7px}.quantity button{width:26px;height:26px;border-radius:50%;border:1px solid #d6dfce;background:white;color:var(--green-900);font-weight:800}.line-price{font-weight:750;color:var(--green-900);font-size:.9rem;white-space:nowrap}.cart-summary{border-top:1px solid #e8eae5;padding:15px 20px 20px}.sum-row{display:flex;justify-content:space-between;margin:5px 0;color:#5e665a;font-size:.92rem}.sum-total{font-weight:850;color:var(--green-950);font-size:1.07rem;padding-top:8px;border-top:1px solid #e8eae5;margin-top:10px}.checkout-btn{width:100%;border:0;border-radius:9px;background:#20a95a;color:white;font-weight:800;padding:13px;margin-top:14px}.checkout-btn:disabled{background:#a9b7a1;cursor:not-allowed}.toast{position:fixed;z-index:30;left:50%;bottom:24px;transform:translate(-50%,20px);background:#223e1c;color:#fff;padding:10px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:.2s;box-shadow:var(--shadow);font-size:.9rem}.toast.show{opacity:1;transform:translate(-50%,0)}
+    dialog.admin-dialog{width:min(1000px,calc(100vw - 24px));max-width:none;max-height:min(94dvh,920px);padding:0;border:0;border-radius:16px;box-shadow:0 25px 90px #0005;color:var(--ink)}dialog.admin-dialog::backdrop{background:#10200d99;backdrop-filter:blur(3px)}.admin-shell{display:flex;flex-direction:column;max-height:min(94dvh,920px)}.admin-head{display:flex;justify-content:space-between;align-items:center;padding:17px 22px;background:var(--green-900);color:#fff}.admin-head h2{font-size:1.15rem;margin:0}.admin-head button{border:0;background:transparent;color:#fff;font-size:1.8rem;line-height:1}.admin-content{padding:18px 20px;overflow:auto}.admin-notice{padding:11px 13px;border-radius:9px;background:#fff5d7;color:#594b25;font-size:.87rem;margin-bottom:16px}.admin-auth-box{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px}.admin-auth-box p{flex:1 1 240px;margin:0;font-size:.9rem;color:var(--muted)}.admin-auth-box button,#seedCatalog{border:0;border-radius:8px;background:var(--green-700);color:#fff;padding:9px 12px;font-weight:750}.admin-auth-box button[hidden],#seedCatalog[hidden],.admin-management[hidden]{display:none!important}#seedCatalog{margin:0 0 14px}.admin-layout{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(300px,1.15fr);gap:20px}.admin-form,.admin-products{border:1px solid #e5e9e0;border-radius:12px;padding:15px}.admin-form h3,.admin-products h3{margin:0 0 12px;font-size:1rem}.admin-form label{display:block;font-size:.84rem;font-weight:700;margin:10px 0;color:#394435}.admin-form input,.admin-form textarea{display:block;width:100%;margin-top:5px;border:1px solid #cbd5c4;border-radius:8px;padding:9px 10px;background:white;color:var(--ink);outline-color:#86a66f}.admin-form textarea{resize:vertical;min-height:68px}.admin-form .price-emoji{display:grid;grid-template-columns:1fr 92px;gap:10px}.admin-form small{font-weight:400;color:var(--muted)}.image-preview{height:118px;border:1px dashed #cbd5c4;border-radius:9px;background:#f7f9f4;display:grid;place-items:center;overflow:hidden;color:var(--muted);font-size:.84rem}.image-preview img{width:100%;height:100%;object-fit:contain}.admin-actions{display:flex;gap:8px;margin-top:12px}.admin-actions button,.backup-actions button{border:0;border-radius:8px;padding:9px 12px;font-weight:750}.admin-save{flex:1;background:var(--green-700);color:#fff}.admin-reset,.backup-actions button{background:#edf1e9;color:var(--green-900)}.admin-item{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid #edf0e9}.admin-item:last-child{border-bottom:0}.admin-thumb{width:44px;height:44px;border-radius:8px;background:var(--green-100);display:grid;place-items:center;overflow:hidden;font-size:1.35rem}.admin-thumb img{width:100%;height:100%;object-fit:cover}.admin-item-info{min-width:0}.admin-item-info strong{display:block;font-size:.86rem;overflow-wrap:anywhere}.admin-item-info small{color:var(--muted)}.admin-item-actions{display:flex;gap:5px}.admin-item-actions button{border:1px solid #dfe6d9;background:white;border-radius:7px;padding:6px 8px;color:var(--green-900);font-size:.8rem}.admin-item-actions .delete-product{color:#a33;background:#fff6f4;border-color:#f0d2cc}.backup-actions{display:flex;gap:8px;flex-wrap:wrap;border-top:1px solid #e5e9e0;padding-top:14px;margin-top:16px}.backup-actions button{font-size:.84rem}.admin-empty{padding:22px 8px;text-align:center;color:var(--muted);font-size:.9rem}
+    dialog.zoom-dialog{position:relative;padding:0;border:0;border-radius:15px;background:#14210f;color:#fff;max-width:min(94vw,1000px);max-height:94dvh;overflow:hidden;box-shadow:0 20px 70px #0008}dialog.zoom-dialog::backdrop{background:#0b160bcc;backdrop-filter:blur(4px)}.zoom-content{position:relative;display:grid;place-items:center;min-width:min(88vw,320px);min-height:min(45vh,320px);padding:18px 18px 52px}.zoom-content img{display:block;max-width:min(88vw,920px);max-height:82dvh;object-fit:contain;border-radius:7px}.zoom-emoji{font-size:clamp(7rem,30vw,15rem);line-height:1}.zoom-caption{position:absolute;left:15px;right:15px;bottom:13px;text-align:center;font-weight:700;color:#fff}.zoom-close{position:absolute;z-index:2;right:10px;top:10px;width:40px;height:40px;border:0;border-radius:50%;background:#ffffffdc;color:#20321a;font-size:1.7rem;line-height:1}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.product-art{height:155px}.header-inner{gap:14px}}
+    @media(max-width:650px){.header-inner{grid-template-columns:1fr auto;gap:10px;padding:10px 14px}.brand{font-size:1rem}.search-wrap{grid-column:1/-1;grid-row:2}.cart-top{padding:8px 12px;font-size:.88rem}.hero{padding:38px 18px 36px}.hero p{font-size:.95rem}.main{padding:18px 13px 30px}.filters{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;margin:0 -13px 18px;padding:2px 13px 7px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter-btn{flex:0 0 auto;padding:7px 14px;font-size:.84rem}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-card{border-radius:12px}.product-art{height:125px}.product-emoji{font-size:3.35rem}.product-body{padding:11px 10px 11px}.product-body h2{font-size:.91rem}.product-desc{font-size:.79rem;min-height:3em;margin-bottom:9px}.price{font-size:1.05rem}.add-btn{font-size:.82rem;padding:9px 8px}.share-btn{width:31px;height:31px;right:7px;top:7px}.shipping-tip{right:14px;bottom:83px;font-size:.73rem}.whatsapp-float{right:14px;bottom:14px;width:52px;height:52px}.site-footer{padding:25px 14px}}
+    @media(max-width:700px){.admin-layout{grid-template-columns:1fr}.admin-content{padding:13px}.admin-form,.admin-products{padding:12px}.admin-head{padding:14px 16px}.admin-item{grid-template-columns:40px minmax(0,1fr) auto;gap:7px}.admin-item-actions{gap:3px}.admin-item-actions button{padding:6px}}
+    @media(max-width:360px){.grid{grid-template-columns:1fr}.product-art{height:165px}.product-desc{min-height:0}.brand{font-size:.92rem}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Naturais e Cosméticos, início"><span>🌿</span>Naturais e Cosméticos</a>
+      <label class="search-wrap"><span class="search-icon" aria-hidden="true">🔍</span><input id="search" type="search" placeholder="Buscar produtos..." aria-label="Buscar produtos"></label>
+      <button class="cart-top" id="openCart" type="button" aria-label="Abrir carrinho">🛒 Carrinho <span class="count" id="cartCount">0</span></button>
+    </div>
+  </header>
+  <section class="hero" id="inicio">
+    <h1>🌸 Beleza que vem da natureza</h1>
+    <p>Produtos 100% naturais e cosméticos para cuidar de você com amor e consciência.</p>
+    <div class="hero-note">🌱 Cuidado consciente, do jeitinho que você merece</div>
+  </section>
+  <main class="main">
+    <nav class="filters" id="filters" aria-label="Filtrar por categoria"></nav>
+    <p class="results-note" id="resultsNote" aria-live="polite"></p>
+    <section class="grid" id="productGrid" aria-label="Produtos"></section>
+  </main>
+  <footer class="site-footer">
+    <p class="footer-brand">🌿 Naturais e Cosméticos</p>
+    <p>Beleza natural, cuidado consciente 💚</p>
+    <button class="admin-btn" type="button" id="adminBtn">⚙️ Área Administrativa</button>
+    <p class="copyright">© <span id="year"></span> — Todos os direitos reservados</p>
+  </footer>
+  <div class="shipping-tip">💬 Peça o cálculo do frete pelo WhatsApp!</div>
+  <a class="whatsapp-float" id="whatsappLink" href="https://wa.me/?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20os%20produtos%20naturais." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">☎</a>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Seu carrinho" aria-hidden="true">
+    <div class="cart-head"><h2>🛒 Seu Carrinho</h2><button class="close-cart" id="closeCart" type="button" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary">
+      <div class="sum-row"><span>Subtotal</span><strong id="subtotal">R$ 0,00</strong></div>
+      <div class="sum-row"><span>Frete</span><strong id="shipping">R$ 10,00</strong></div>
+      <div class="sum-row sum-total"><span>Total</span><strong id="total">R$ 10,00</strong></div>
+      <button class="checkout-btn" id="checkout" type="button" disabled>📱 Finalizar via WhatsApp</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="admin-dialog" id="adminDialog" aria-labelledby="adminTitle">
+    <div class="admin-shell">
+      <header class="admin-head"><h2 id="adminTitle">⚙️ Gerenciar catálogo</h2><button id="closeAdmin" type="button" aria-label="Fechar painel">×</button></header>
+      <div class="admin-content">
+        <div class="admin-notice">O catálogo é sincronizado pelo Firestore. Entre com a conta Google administradora para gerenciar os produtos. As fotos enviadas serão guardadas no Firebase Storage.</div>
+        <div class="admin-auth-box"><p id="authStatus">Verificando acesso ao Firebase…</p><button type="button" id="googleSignIn">Entrar com Google</button><button type="button" id="googleSignOut" hidden>Sair</button></div>
+        <button type="button" id="seedCatalog" hidden>Carregar os 12 produtos de exemplo no Firebase</button>
+        <div class="admin-management" id="adminManagement" hidden>
+        <div class="admin-layout">
+          <form class="admin-form" id="productForm">
+            <h3 id="productFormTitle">Adicionar produto</h3>
+            <input type="hidden" id="editProductId">
+            <label>Nome do produto<input id="productName" required maxlength="100" placeholder="Ex.: Sabonete artesanal"></label>
+            <label>Descrição<textarea id="productDescription" required maxlength="240" placeholder="Descreva o produto"></textarea></label>
+            <label>Categoria<input id="productCategory" list="categoryOptions" required maxlength="40" placeholder="Escolha ou digite uma categoria"><datalist id="categoryOptions"></datalist></label>
+            <div class="price-emoji">
+              <label>Preço (R$)<input id="productPrice" type="number" min="0" step="0.01" required placeholder="0,00"></label>
+              <label>Emoji<input id="productEmoji" maxlength="4" placeholder="🌿"></label>
+            </div>
+            <label>Foto do produto <small>(JPG, PNG ou WebP; será otimizada)</small><input id="productImage" type="file" accept="image/jpeg,image/png,image/webp,image/gif"></label>
+            <div class="image-preview" id="imagePreview">Prévia da foto ou emoji</div>
+            <div class="admin-actions"><button class="admin-save" type="submit" id="saveProduct">Salvar produto</button><button class="admin-reset" type="button" id="resetProductForm">Limpar</button></div>
+          </form>
+          <section class="admin-products"><h3>Produtos cadastrados (<span id="adminProductCount">0</span>)</h3><div id="adminProductsList"></div></section>
+        </div>
+        <div class="backup-actions"><button type="button" id="exportCatalog">⬇️ Exportar catálogo (backup)</button><button type="button" id="importCatalogBtn">⬆️ Importar catálogo</button><input id="importCatalog" type="file" accept="application/json,.json" hidden></div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="zoom-dialog" id="zoomDialog" aria-label="Foto ampliada">
+    <button class="zoom-close" id="closeZoom" type="button" aria-label="Fechar foto ampliada">×</button>
+    <div class="zoom-content" id="zoomContent"></div>
+  </dialog>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
+    import { getFirestore, collection, onSnapshot, doc, setDoc, deleteDoc, writeBatch } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js';
+    import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js';
+    import { getStorage, ref as storageRef, uploadString, getDownloadURL } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-storage.js';
+    const firebaseConfig={apiKey:'AIzaSyAxNwngfHhAkGoFGJ4IKK4yPjFhljGLBsY',authDomain:'naturaisecosmeticos-7dd9d.firebaseapp.com',projectId:'naturaisecosmeticos-7dd9d',storageBucket:'naturaisecosmeticos-7dd9d.firebasestorage.app',messagingSenderId:'567966563517',appId:'1:567966563517:web:31510ab1ae65cace744bd4'};
+    const firebaseApp=initializeApp(firebaseConfig);
+    const db=getFirestore(firebaseApp);
+    const auth=getAuth(firebaseApp);
+    const storage=getStorage(firebaseApp);
+    const ADMIN_EMAIL='motoflavio3@gmail.com';
+    let currentUser=null,isAdmin=false,cloudReady=false;
+    const defaultProducts = [
+      {id:1,emoji:'🥥',category:'Óleos',name:'Óleo de Coco Extra Virgem',description:'100% puro, prensado a frio. Hidrata pele e cabelos.',price:32.90},
+      {id:2,emoji:'🪻',category:'Sabonetes',name:'Sabonete de Lavanda',description:'Artesanal, relaxante e aromático.',price:18.50},
+      {id:3,emoji:'🧴',category:'Hidratantes',name:'Manteiga de Karité',description:'Hidratação profunda para pele e cabelos.',price:45.00},
+      {id:4,emoji:'🧼',category:'Cabelos',name:'Shampoo Sólido Natural',description:'Sem sulfato, rende até 80 lavagens.',price:28.90},
+      {id:5,emoji:'🌿',category:'Óleos',name:'Óleo Essencial de Tea Tree',description:'100% puro, antisséptico natural.',price:39.90},
+      {id:6,emoji:'🌵',category:'Hidratantes',name:'Creme Hidratante de Aloe',description:'Acalma e hidrata a pele sensível.',price:35.00},
+      {id:7,emoji:'🎭',category:'Cosméticos',name:'Máscara Facial de Argila',description:'Limpeza profunda e detox da pele.',price:29.90},
+      {id:8,emoji:'💆',category:'Cabelos',name:'Condicionador Sólido',description:'Natural, vegano e sustentável.',price:32.00},
+      {id:9,emoji:'🍯',category:'Sabonetes',name:'Sabonete de Mel e Aveia',description:'Esfoliante suave e nutritivo.',price:16.90},
+      {id:10,emoji:'✨',category:'Cosméticos',name:'Sérum Facial Vitamina C',description:'Ilumina e uniformiza o tom da pele.',price:68.00},
+      {id:11,emoji:'🌹',category:'Óleos',name:'Óleo de Rosa Mosqueta',description:'Reduz cicatrizes e marcas de expressão.',price:42.50},
+      {id:12,emoji:'🌸',category:'Cosméticos',name:'Desodorante Natural',description:'Sem alumínio, aroma floral suave.',price:24.90}
+    ];
+    let products=[];
+    const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const safeImage=value=>typeof value==='string'&&(/^data:image\/(jpeg|png|webp);base64,/i.test(value)||/^https:\/\/firebasestorage\.googleapis\.com\//i.test(value));
+    // Configure o WhatsApp da loja com DDI+DDD+número, só dígitos. Ex.: 5551999999999
+    const whatsappNumber='5555984592924';
+    const whatsappUrl=message=>`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    const money=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+    let selectedCategory='Todos';
+    let cart={};
+    try{cart=JSON.parse(localStorage.getItem('naturaisCart')||'{}')||{};}catch{cart={};}
+    const grid=document.getElementById('productGrid');
+    const filters=document.getElementById('filters');
+    const search=document.getElementById('search');
+    const drawer=document.getElementById('cartDrawer');
+    const overlay=document.getElementById('overlay');
+    const toastEl=document.getElementById('toast');
+    let toastTimer;
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    function renderFilters(){const categories=['Todos',...new Set(products.map(p=>p.category).filter(Boolean))];if(!categories.includes(selectedCategory))selectedCategory='Todos';filters.innerHTML=categories.map(c=>`<button class="filter-btn ${c===selectedCategory?'active':''}" type="button" aria-pressed="${c===selectedCategory}" data-category="${escapeHTML(c)}">${escapeHTML(c)}</button>`).join('');}
+    function renderProducts(){
+      if(!cloudReady){document.getElementById('resultsNote').textContent='Conectando ao catálogo online…';grid.innerHTML='<div class="empty-results">Carregando produtos…</div>';return;}
+      const term=search.value.trim().toLocaleLowerCase('pt-BR');
+      const shown=products.filter(p=>(selectedCategory==='Todos'||p.category===selectedCategory)&&(!term||`${p.name} ${p.description} ${p.category}`.toLocaleLowerCase('pt-BR').includes(term)));
+      document.getElementById('resultsNote').textContent=`${shown.length} ${shown.length===1?'produto encontrado':'produtos encontrados'}`;
+      if(!shown.length){grid.innerHTML='<div class="empty-results"><strong>Nenhum produto encontrado</strong>Tente outro nome ou escolha uma categoria diferente.</div>';return;}
+      grid.innerHTML=shown.map(p=>{const artwork=safeImage(p.image)?`<img src="${escapeHTML(p.image)}" alt="">`:`<span class="product-emoji">${escapeHTML(p.emoji||'🌿')}</span>`;return `<article class="product-card" id="product-${escapeHTML(p.id)}">
+        <button class="product-art zoom-trigger" type="button" aria-label="Ampliar imagem de ${escapeHTML(p.name)}" data-zoom="${escapeHTML(p.id)}">${artwork}<span class="zoom-hint" aria-hidden="true">🔍</span></button>
+        <button class="share-btn" type="button" aria-label="Compartilhar ${escapeHTML(p.name)} pelo WhatsApp" data-share="${escapeHTML(p.id)}">💬</button>
+        <div class="product-body"><span class="category-label">${escapeHTML(p.category)}</span><h2>${escapeHTML(p.name)}</h2><p class="product-desc">${escapeHTML(p.description)}</p><div class="price">${money(Number(p.price)||0)}</div><button class="add-btn" type="button" data-add="${escapeHTML(p.id)}">+ Adicionar</button></div>
+      </article>`;}).join('');
+    }
+    function saveCart(){try{localStorage.setItem('naturaisCart',JSON.stringify(cart));}catch{} renderCart();}
+    function cartQuantity(){return Object.values(cart).reduce((sum,n)=>sum+n,0);}
+    function renderCart(){
+      const count=cartQuantity();document.getElementById('cartCount').textContent=count;
+      const cartItems=document.getElementById('cartItems');
+      const entries=products.filter(p=>cart[p.id]);
+      if(!entries.length){cartItems.innerHTML='<div class="cart-empty"><div class="bag">🛍️</div><p><strong>Seu carrinho está vazio</strong></p><p>Adicione produtos naturais incríveis!</p></div>';}
+      else cartItems.innerHTML=entries.map(p=>`<div class="cart-line"><div class="cart-line-emoji">${safeImage(p.image)?`<img src="${escapeHTML(p.image)}" alt="Foto de ${escapeHTML(p.name)}">`:escapeHTML(p.emoji||'🌿')}</div><div><h3>${escapeHTML(p.name)}</h3><small>${money(Number(p.price)||0)} cada</small><div class="quantity"><button type="button" aria-label="Diminuir ${escapeHTML(p.name)}" data-qty="${escapeHTML(p.id)}" data-delta="-1">−</button><span>${cart[p.id]}</span><button type="button" aria-label="Aumentar ${escapeHTML(p.name)}" data-qty="${escapeHTML(p.id)}" data-delta="1">+</button></div></div><div class="line-price">${money((Number(p.price)||0)*cart[p.id])}</div></div>`).join('');
+      const subtotal=entries.reduce((sum,p)=>sum+p.price*cart[p.id],0);const shipping=count?10:10;
+      document.getElementById('subtotal').textContent=money(subtotal);document.getElementById('shipping').textContent=money(shipping);document.getElementById('total').textContent=money(subtotal+shipping);document.getElementById('checkout').disabled=count===0;
+    }
+    function showToast(message){toastEl.textContent=message;toastEl.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.classList.remove('show'),2200);}
+    const adminDialog=document.getElementById('adminDialog');
+    const zoomDialog=document.getElementById('zoomDialog');
+    const zoomContent=document.getElementById('zoomContent');
+    let currentImage='';
+    async function saveProductToCloud(product){if(!isAdmin)throw new Error('Entre com a conta administradora.');const saved={...product,id:String(product.id)};if(typeof saved.image==='string'&&saved.image.startsWith('data:image/')){saved.imagePath=saved.imagePath||`products/${encodeURIComponent(saved.id)}.jpg`;const fileRef=storageRef(storage,saved.imagePath);await uploadString(fileRef,saved.image,'data_url',{contentType:'image/jpeg'});saved.image=await getDownloadURL(fileRef);}await setDoc(doc(db,'products',saved.id),{name:saved.name,description:saved.description,category:saved.category,price:Number(saved.price),emoji:saved.emoji||'🌿',image:saved.image||'',imagePath:saved.imagePath||''});return saved;}
+    function renderAdminProducts(){
+      const list=document.getElementById('adminProductsList');document.getElementById('adminProductCount').textContent=products.length;
+      const cats=[...new Set(products.map(p=>p.category).filter(Boolean))];document.getElementById('categoryOptions').innerHTML=cats.map(c=>`<option value="${escapeHTML(c)}"></option>`).join('');
+      if(!products.length){list.innerHTML='<div class="admin-empty">Nenhum produto cadastrado.</div>';return;}
+      list.innerHTML=products.map(p=>`<div class="admin-item"><div class="admin-thumb">${safeImage(p.image)?`<img src="${escapeHTML(p.image)}" alt="">`:escapeHTML(p.emoji||'🌿')}</div><div class="admin-item-info"><strong>${escapeHTML(p.name)}</strong><small>${escapeHTML(p.category)} · ${money(Number(p.price)||0)}</small></div><div class="admin-item-actions"><button type="button" data-edit-product="${escapeHTML(p.id)}">Editar</button><button class="delete-product" type="button" data-delete-product="${escapeHTML(p.id)}">Excluir</button></div></div>`).join('');
+    }
+    function updateImagePreview(){const preview=document.getElementById('imagePreview');preview.innerHTML=currentImage&&safeImage(currentImage)?`<img src="${escapeHTML(currentImage)}" alt="Prévia da foto">`:escapeHTML(document.getElementById('productEmoji').value||'Prévia da foto ou emoji');}
+    function resetProductForm(){document.getElementById('productForm').reset();document.getElementById('editProductId').value='';currentImage='';document.getElementById('productFormTitle').textContent='Adicionar produto';document.getElementById('saveProduct').textContent='Salvar produto';document.getElementById('imagePreview').textContent='Prévia da foto ou emoji';}
+    function openAdmin(){resetProductForm();renderAdminProducts();updateAdminUI();adminDialog.showModal();}
+    function optimizeImage(file){return new Promise((resolve,reject)=>{if(!file||!file.type.startsWith('image/'))return reject(new Error('Escolha um arquivo de imagem.'));if(file.size>12*1024*1024)return reject(new Error('A foto deve ter até 12 MB.'));const src=URL.createObjectURL(file);const image=new Image();image.onload=()=>{const max=1000,scale=Math.min(1,max/Math.max(image.width,image.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(image.width*scale));canvas.height=Math.max(1,Math.round(image.height*scale));canvas.getContext('2d').drawImage(image,0,0,canvas.width,canvas.height);URL.revokeObjectURL(src);resolve(canvas.toDataURL('image/jpeg',.78));};image.onerror=()=>{URL.revokeObjectURL(src);reject(new Error('Não foi possível abrir esta foto.'));};image.src=src;});}
+    document.getElementById('productEmoji').addEventListener('input',()=>{if(!currentImage)updateImagePreview();});
+    document.getElementById('productImage').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{currentImage=await optimizeImage(file);updateImagePreview();}catch(err){showToast(err.message);e.target.value='';}});
+    document.getElementById('resetProductForm').addEventListener('click',resetProductForm);
+    document.getElementById('productForm').addEventListener('submit',async e=>{
+      e.preventDefault();if(!isAdmin){showToast('Entre com a conta administradora para salvar.');return;}const editId=document.getElementById('editProductId').value;const old=products.find(p=>String(p.id)===editId);const price=Number(document.getElementById('productPrice').value);const name=document.getElementById('productName').value.trim();const description=document.getElementById('productDescription').value.trim();const category=document.getElementById('productCategory').value.trim();
+      if(!name||!description||!category||!Number.isFinite(price)||price<0){showToast('Confira nome, descrição, categoria e preço.');return;}
+      const item={id:old?String(old.id):`produto-${Date.now()}`,name,description,category,price,emoji:document.getElementById('productEmoji').value.trim()||'🌿',image:currentImage||'',imagePath:old?.imagePath||''};
+      const button=document.getElementById('saveProduct');button.disabled=true;button.textContent='Salvando…';
+      try{await saveProductToCloud(item);resetProductForm();showToast(old?'Produto atualizado!':'Produto adicionado!');}catch(err){showToast('Não foi possível salvar. Confira login, Firestore e Storage.');}finally{button.disabled=false;button.textContent=old?'Salvar alterações':'Salvar produto';}
+    });
+    document.getElementById('adminProductsList').addEventListener('click',async e=>{
+      const edit=e.target.closest('[data-edit-product]');if(edit){const p=products.find(x=>String(x.id)===edit.dataset.editProduct);if(!p)return;document.getElementById('editProductId').value=p.id;document.getElementById('productName').value=p.name;document.getElementById('productDescription').value=p.description;document.getElementById('productCategory').value=p.category;document.getElementById('productPrice').value=Number(p.price).toFixed(2);document.getElementById('productEmoji').value=p.emoji||'';currentImage=safeImage(p.image)?p.image:'';document.getElementById('productFormTitle').textContent='Editar produto';document.getElementById('saveProduct').textContent='Salvar alterações';updateImagePreview();document.getElementById('productForm').scrollIntoView({behavior:'smooth',block:'start'});return;}
+      const del=e.target.closest('[data-delete-product]');if(del){const id=del.dataset.deleteProduct;const p=products.find(x=>String(x.id)===id);if(!p||!isAdmin||!confirm(`Excluir "${p.name}" do catálogo?`))return;try{await deleteDoc(doc(db,'products',id));delete cart[id];saveCart();showToast('Produto removido do catálogo.');}catch{showToast('Não foi possível excluir. Confira as regras do Firestore.');}}
+    });
+    document.getElementById('exportCatalog').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(products,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='backup-catalogo-naturais.json';a.click();URL.revokeObjectURL(url);showToast('Backup do catálogo baixado.');});
+    document.getElementById('importCatalogBtn').addEventListener('click',()=>document.getElementById('importCatalog').click());
+    document.getElementById('importCatalog').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(!isAdmin)throw new Error('Entre com a conta administradora.');const raw=JSON.parse(await file.text());if(!Array.isArray(raw)||raw.length>500)throw new Error('O arquivo não parece ser um catálogo válido.');const valid=raw.every(p=>p&&typeof p.name==='string'&&typeof p.description==='string'&&typeof p.category==='string'&&Number.isFinite(Number(p.price)));if(!valid)throw new Error('O backup contém produtos com campos inválidos.');if(!confirm('Importar este backup e substituir o catálogo atual?'))return;const next=raw.map((p,i)=>({id:String(p.id??`importado-${Date.now()}-${i}`),name:p.name.slice(0,100),description:p.description.slice(0,240),category:p.category.slice(0,40),price:Math.max(0,Number(p.price)),emoji:typeof p.emoji==='string'?p.emoji.slice(0,4):'🌿',image:safeImage(p.image)?p.image:'',imagePath:typeof p.imagePath==='string'?p.imagePath:''}));const keep=new Set(next.map(p=>p.id));for(const old of products){if(!keep.has(String(old.id))){await deleteDoc(doc(db,'products',String(old.id)));}}for(const p of next)await saveProductToCloud(p);cart={};saveCart();resetProductForm();showToast('Catálogo importado para o Firebase!');}catch(err){showToast(err.message||'Não foi possível importar o backup.');}finally{e.target.value='';}});
+    document.getElementById('closeAdmin').addEventListener('click',()=>adminDialog.close());
+    adminDialog.addEventListener('click',e=>{if(e.target===adminDialog)adminDialog.close();});
+    document.getElementById('closeZoom').addEventListener('click',()=>zoomDialog.close());
+    zoomDialog.addEventListener('click',e=>{if(e.target===zoomDialog)zoomDialog.close();});
+    function updateAdminUI(){const status=document.getElementById('authStatus'),login=document.getElementById('googleSignIn'),logout=document.getElementById('googleSignOut'),tools=document.getElementById('adminManagement'),seed=document.getElementById('seedCatalog');isAdmin=Boolean(currentUser&&currentUser.email&&currentUser.email.toLowerCase()===ADMIN_EMAIL.toLowerCase());tools.hidden=!isAdmin;login.hidden=Boolean(currentUser);logout.hidden=!currentUser;if(!currentUser)status.textContent=`Entre com a conta Google administradora (${ADMIN_EMAIL}).`;else if(isAdmin)status.textContent=`Conectado como ${currentUser.email}.`;else status.textContent=`${currentUser.email||'Conta Google'} não tem acesso administrativo. Entre com ${ADMIN_EMAIL}.`;seed.hidden=!(isAdmin&&cloudReady&&products.length===0);}
+    document.getElementById('googleSignIn').addEventListener('click',async()=>{try{await signInWithPopup(auth,new GoogleAuthProvider());}catch{showToast('Ative o login Google no Firebase Authentication e tente novamente.');}});
+    document.getElementById('googleSignOut').addEventListener('click',async()=>{try{await signOut(auth);}catch{showToast('Não foi possível encerrar a sessão.');}});
+    onAuthStateChanged(auth,user=>{currentUser=user;updateAdminUI();});
+    onSnapshot(collection(db,'products'),snapshot=>{cloudReady=true;products=snapshot.docs.map(item=>({...item.data(),id:item.id}));renderFilters();renderProducts();renderCart();renderAdminProducts();updateAdminUI();},()=>{cloudReady=true;document.getElementById('resultsNote').textContent='Não foi possível carregar o catálogo online.';grid.innerHTML='<div class="empty-results"><strong>Catálogo temporariamente indisponível</strong>Confira a configuração e as regras do Firestore.</div>';updateAdminUI();});
+    document.getElementById('seedCatalog').addEventListener('click',async()=>{if(!isAdmin||products.length)return;try{const batch=writeBatch(db);defaultProducts.forEach(p=>{const {id,...data}=p;batch.set(doc(db,'products',String(id)),{...data,image:'',imagePath:''});});await batch.commit();showToast('Produtos de exemplo carregados no Firebase.');}catch{showToast('Não foi possível carregar. Confira as regras do Firestore.');}});
+    function openCart(){drawer.classList.add('open');overlay.classList.add('open');drawer.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';document.getElementById('closeCart').focus();}
+    function closeCart(){drawer.classList.remove('open');overlay.classList.remove('open');drawer.setAttribute('aria-hidden','true');document.body.style.overflow='';document.getElementById('openCart').focus();}
+    filters.addEventListener('click',e=>{const btn=e.target.closest('[data-category]');if(!btn)return;selectedCategory=btn.dataset.category;renderFilters();renderProducts();});
+    search.addEventListener('input',renderProducts);
+    grid.addEventListener('click',async e=>{
+      const zoom=e.target.closest('[data-zoom]');if(zoom){const p=products.find(x=>String(x.id)===zoom.dataset.zoom);if(!p)return;zoomContent.innerHTML=`${safeImage(p.image)?`<img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.name)}">`:`<span class="zoom-emoji" role="img" aria-label="${escapeHTML(p.name)}">${escapeHTML(p.emoji||'🌿')}</span>`}<div class="zoom-caption">${escapeHTML(p.name)}</div>`;zoomDialog.showModal();return;}
+      const add=e.target.closest('[data-add]');if(add){const id=add.dataset.add;cart[id]=(cart[id]||0)+1;saveCart();showToast('Produto adicionado ao carrinho 🌿');return;}
+      const share=e.target.closest('[data-share]');if(share){const p=products.find(x=>String(x.id)===share.dataset.share);if(!p)return;let text=`🌿 ${p.name}\n${p.description}\nPreço: ${money(Number(p.price)||0)}`;if(location.protocol==='https:'||location.protocol==='http:'){const productUrl=new URL(location.href);productUrl.hash=`product-${encodeURIComponent(p.id)}`;text+=`\nVeja o produto: ${productUrl.href}`;}text+=`\nWhatsApp da loja: https://wa.me/${whatsappNumber}`;window.open(`https://wa.me/?text=${encodeURIComponent(text)}`,'_blank','noopener,noreferrer');}
+    });
+    document.getElementById('cartItems').addEventListener('click',e=>{const btn=e.target.closest('[data-qty]');if(!btn)return;const id=btn.dataset.qty;cart[id]=(cart[id]||0)+Number(btn.dataset.delta);if(cart[id]<=0)delete cart[id];saveCart();});
+    document.getElementById('openCart').addEventListener('click',openCart);document.getElementById('closeCart').addEventListener('click',closeCart);overlay.addEventListener('click',closeCart);
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))closeCart();});
+    document.getElementById('whatsappLink').href=whatsappUrl('Olá! Quero saber mais sobre os produtos naturais.');
+    document.getElementById('checkout').addEventListener('click',()=>{
+      const entries=products.filter(p=>cart[p.id]);const subtotal=entries.reduce((s,p)=>s+p.price*cart[p.id],0);const lines=entries.map(p=>`• ${p.name} x${cart[p.id]} — ${money(p.price*cart[p.id])}`).join('\n');
+      const message=`Olá! Quero finalizar este pedido:\n${lines}\n\nSubtotal: ${money(subtotal)}\nFrete: ${money(10)}\nTotal: ${money(subtotal+10)}\n\nPodem confirmar o cálculo do frete?`;
+      window.open(whatsappUrl(message),'_blank','noopener');
+    });
+    document.getElementById('adminBtn').addEventListener('click',openAdmin);
+    renderFilters();renderProducts();renderCart();
+    try{if(location.hash.startsWith('#product-'))setTimeout(()=>document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({behavior:'smooth',block:'center'}),100);}catch{}
+  </script>
+</body>
+</html>
